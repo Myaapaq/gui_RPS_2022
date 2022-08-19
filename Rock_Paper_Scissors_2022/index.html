@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--
+        X Make UI so player can play with buttons, not console.
+        X For now, remove the logic that plays exactly five rounds.
+        X Create three buttons, one for each selection. 
+            X Add event listener to the buttons that call your playRound function with the correct 
+              playerSelection every time a button is clicked. (you can keep the console.logs for 
+              this step)
+        X Add a div for displaying results and change all of your console.logs into DOM methods.
+        - Display the running score, and announce a winner of the game once one player reaches 
+          5 points.
+        
+        - Once you’re all done with your UI and made sure everything’s satisfactory, commit your 
+          changes to the rps-ui branch.
+    -->
+    <h1>Rock, Paper, Scissors</h1>
+    <p id="status">Let's play!</p>
+    <div class="button-holder">
+        <button type="button" id="rock">Rock</button>
+        <button type="button" id="paper">Paper</button>
+        <button type="button" id="scissors">Scissors</button>
+    </div>
+
+
+<!-- this is the container for the results-->
+    <div class="box"> 
+        <div id="results"> User: 0 Computer: 0 </div>
+    </div>
+
+  <script src="rock_paper_scissors_2022.js"></script>
+
+  </body>
+</html>
